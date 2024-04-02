@@ -1,0 +1,74 @@
+/* Это основной css файл, где прописаны все глобальные стили ко всем элементам. */
+
+@import "desktop_1120/desktop.css" screen and (min-width: 1120px);
+@import "tablet_768/tablet.css" screen and (min-width: 768px) and (max-width: 1119px);
+@import "mobile_320/mobile.css" screen and (min-width: 320px) and (max-width: 767px);
+@import "visually-hidden.css";
+
+@font-face {
+  font-family: "TT Lakes Condensed";
+  src: local("TT Lakes Condensed"), url("../fonts/TTLakes-DemiBold.woff") format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Lakes Condensed";
+  src: local("TT Lakes Condensed"), url("../fonts/TTLakes-Bold.woff") format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "TT Lakes Condensed";
+  src: local("TT Lakes Condensed"), url("../fonts/TTLakes-Regular.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* todo: указать font, font-size, line-height, font-weight, color шрифта, background color */
+
+  font-family: "TT Lakes Condensed", Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 18px;
+  color: black;
+
+  background-color: #F8F8F8;
+}
+
+.button {
+  font-family: "TT Lakes Condensed", Tahoma, sans-serif;
+  cursor: pointer;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.line {
+  height: 32px;
+  border-left: 2px solid #eaeaea;
+}
+
+.b-block__button--style-changed {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  
+  cursor: pointer;
+}
+
+.i-list__button {
+  color: #7E7E82;
+}
+
