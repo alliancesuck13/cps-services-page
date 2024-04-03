@@ -60,15 +60,17 @@
   max-width: auto;
 }
 
-.i-list__button {
+.i-list__link {
+  display: block;
   padding: 8px;
   white-space: nowrap;
   font-size: 16px;
   background-color: transparent;
   border: none;
+  color: #7E7E82;
 }
 
-.i-list__button--selected {
+.i-list__link--selected {
   background-color: #FFFFFF;
   border: 2px solid #b8ffec;
   border-radius: 6px;
