@@ -1,28 +1,30 @@
 /* Это основной css файл, где прописаны все глобальные стили ко всем элементам. */
 
 @import "desktop_1120/desktop.css" screen and (min-width: 1120px);
-@import "tablet_768/tablet.css" screen and (min-width: 768px) and (max-width: 1119px);
-@import "mobile_320/mobile.css" screen and (min-width: 320px) and (max-width: 767px);
+@import "tablet_768/tablet.css" screen and (min-width: 767.9px) and (max-width: 1119.9px);
+@import "mobile_320/mobile.css" screen and (min-width: 319.9px) and (max-width: 767.9px);
 @import "visually-hidden.css";
 
 @font-face {
   font-family: "TT Lakes Condensed";
-  src: local("TT Lakes Condensed"), url("../fonts/TTLakes-DemiBold.woff") format('woff');
+  src: local("TT Lakes Condensed"),
+    url("../fonts/TTLakes-DemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "TT Lakes Condensed";
-  src: local("TT Lakes Condensed"), url("../fonts/TTLakes-Bold.woff") format('woff');
+  src: local("TT Lakes Condensed"),
+    url("../fonts/TTLakes-Bold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 
-
 @font-face {
   font-family: "TT Lakes Condensed";
-  src: local("TT Lakes Condensed"), url("../fonts/TTLakes-Regular.woff") format('woff');
+  src: local("TT Lakes Condensed"),
+    url("../fonts/TTLakes-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -35,15 +37,10 @@ body {
   font-family: "TT Lakes Condensed", Tahoma, sans-serif;
   font-size: 16px;
   font-weight: normal;
-  line-height: 18px;
+  line-height: 23px;
   color: black;
 
-  background-color: #F8F8F8;
-}
-
-.button {
-  font-family: "TT Lakes Condensed", Tahoma, sans-serif;
-  cursor: pointer;
+  background-color: #f8f8f8;
 }
 
 .list {
@@ -64,11 +61,10 @@ body {
   padding: 0;
   background-color: transparent;
   border: none;
-  
+
   cursor: pointer;
 }
 
 .i-list__button {
-  color: #7E7E82;
+  color: #7e7e82;
 }
-
