@@ -57,7 +57,7 @@ body {
   border-left: 2px solid #eaeaea;
 }
 
-.b-block__button--style-changed {
+.button {
   padding: 0;
   background-color: transparent;
   border: none;
@@ -67,4 +67,150 @@ body {
 
 .i-list__button {
   color: #7e7e82;
+}
+
+.aside-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  width: 320px;
+  height: 100%;
+
+  z-index: 20;
+
+  box-shadow: 16px 0 50px 0px rgba(14, 24, 80, 0.2);
+  background-color: #fff;
+
+  font-weight: 600;
+  
+  overflow: auto;
+}
+
+.aside-menu__header {
+  display: flex;
+  margin-left: 24px;
+  margin-top: 16px;
+  margin-bottom: 46px;
+  align-items: center;
+}
+
+.aside-menu__nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.aside-menu__block--with-logo {
+  order: 1;
+  margin-left: 16px;
+  margin-right: 78px;
+}
+
+.aside-menu__block:last-child {
+  order: 2;
+  margin-right: 24px;
+}
+
+.aside-menu__main {
+  width: 222px;
+}
+
+.aside-menu__list {
+  padding-left: 24px;
+  margin: 0;
+}
+
+.aside-menu__item {
+  margin-bottom: 32px;
+}
+
+.aside-menu__link {
+  color: black;
+  white-space: nowrap;
+
+  transition: 400ms;
+}
+
+.aside-menu__link:hover {
+  color: #7E7E82;
+}
+
+.aside-menu__link:focus {
+  color: #7E7E82;
+}
+
+/* добавил вес селектору, чтобы language__link корректно отображались */
+.selected-link.selected-link {
+  color: #7E7E82;
+}
+
+.selected-link::before {
+  content: url(../img/highlight.svg);
+  position: absolute;
+  left: 0;
+  transform: translateY(-7px);
+}
+
+.aside-menu__footer {
+  position: absolute;
+  bottom: 0;
+  width: 222px;
+  max-height: 188px;
+  padding-bottom: 32px;
+}
+
+@media screen and (max-height: 765px) {
+  .aside-menu__footer {
+    position: static;
+  }
+}
+
+.aside-menu__footer-block {
+  margin-left: 24px;
+}
+
+.aside-menu__footer-block:last-child {
+  margin-top: 40px;
+}
+
+.aside-menu__button-wrapper {
+  display: inline-block;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.menu-contacts__mail {
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.menu-contacts__phone {
+  white-space: nowrap;
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.language__link {
+  color: black;
+
+  text-transform: uppercase;
+}
+
+.aside-menu__footer-block .selected-link::before {
+  content: "";
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 10;
+
+  background-color: white;
+  opacity: 0.95;
 }
