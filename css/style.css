@@ -7,24 +7,21 @@
 
 @font-face {
   font-family: "TT Lakes Condensed";
-  src: local("TT Lakes Condensed"),
-    url("../fonts/TTLakes-DemiBold.woff") format("woff");
+  src: local("TT Lakes Condensed"), url("../fonts/TTLakes-DemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "TT Lakes Condensed";
-  src: local("TT Lakes Condensed"),
-    url("../fonts/TTLakes-Bold.woff") format("woff");
+  src: local("TT Lakes Condensed"), url("../fonts/TTLakes-Bold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: "TT Lakes Condensed";
-  src: local("TT Lakes Condensed"),
-    url("../fonts/TTLakes-Regular.woff") format("woff");
+  src: local("TT Lakes Condensed"), url("../fonts/TTLakes-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -32,7 +29,6 @@
 body {
   margin: 0;
   padding: 0;
-  /* todo: указать font, font-size, line-height, font-weight, color шрифта, background color */
 
   font-family: "TT Lakes Condensed", Tahoma, sans-serif;
   font-size: 16px;
@@ -73,7 +69,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  
+
   width: 320px;
   height: 100%;
 
@@ -83,7 +79,7 @@ body {
   background-color: #fff;
 
   font-weight: 600;
-  
+
   overflow: auto;
 }
 
@@ -132,19 +128,18 @@ body {
 }
 
 .aside-menu__link:hover {
-  color: #7E7E82;
+  color: #7e7e82;
 }
 
 .aside-menu__link:focus {
-  color: #7E7E82;
+  color: #7e7e82;
 }
 
-/* добавил вес селектору, чтобы language__link корректно отображались */
-.selected-link.selected-link {
-  color: #7E7E82;
+.aside-menu__link--selected {
+  color: #7e7e82;
 }
 
-.selected-link::before {
+.aside-menu__link--selected::before {
   content: url(../img/highlight.svg);
   position: absolute;
   left: 0;
@@ -191,16 +186,21 @@ body {
   margin: 0;
 }
 
-.language__link {
+.aside-menu__footer-link {
   color: black;
 
   text-transform: uppercase;
 
   margin-right: 7px;
+  transition: 400ms;
 }
 
-.aside-menu__footer-block .selected-link::before {
-  content: "";
+.aside-menu__footer-link:hover {
+  color: #7e7e82;
+}
+
+.aside-menu__footer-link--selected {
+  color: #7e7e82;
 }
 
 .overlay {
