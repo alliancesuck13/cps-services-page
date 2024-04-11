@@ -20,9 +20,9 @@
           </li>
           <li class="header-list__item">
             <div class="b-block">
-              <button class="b-block__button button" type="button">
-                <span class="button__text visually-hidden">Меню</span>
-                <img class="b-block__img" src="img/burger.svg" alt="Меню" />
+              <button class="b-block__button b-block__button-open button" type="button">
+                <span class="button__text visually-hidden">Открыть меню</span>
+                <img class="b-block__img" src="img/burger.svg" alt="Открыть меню" />
               </button>
             </div>
           </li>
@@ -129,6 +129,92 @@
           <img class="section-block__img" src="img/MG_3223.png" width="800" height="auto" alt="CPS-логотип на стене" />
         </div>
       </section>
+      <section class="brands">
+        <div class="brands-block">
+          <h2 class="brands__title">Ремонт техники различных брендов</h2>
+        </div>
+        <div class="brands-block">
+          <ul class="brands__list list">
+            <li class="brands__item">
+              <a class="brands__link link" href="#">
+                <span class="visually-hidden">Lenovo</span>
+                <img class="brands__img" src="img/lenovo.svg" alt="Lenovo" />
+                <img class="brands__img brands__img--go-to" src="img/go.svg" alt="Перейти по ссылке" />
+              </a>
+            </li>
+            <li class="brands__item">
+              <a class="brands__link link" href="#">
+                <span class="visually-hidden">Samsung</span>
+                <img class="brands__img" src="img/samsung.svg" alt="Samsung" />
+                <img class="brands__img brands__img--go-to" src="img/go.svg" alt="Перейти по ссылке" />
+              </a>
+            </li>
+            <li class="brands__item">
+              <a class="brands__link link" href="#">
+                <span class="visually-hidden">Apple</span>
+                <img class="brands__img" src="img/apple.svg" alt="Apple" />
+                <img class="brands__img brands__img--go-to" src="img/go.svg" alt="Перейти по ссылке" />
+              </a>
+            </li>
+            <li class="brands__item">
+              <a class="brands__link link" href="#">
+                <span class="visually-hidden">ViewSonic</span>
+                <img class="brands__img" src="img/viewsonic.svg" alt="ViewSonic" />
+                <img class="brands__img brands__img--go-to" src="img/go.svg" alt="Перейти по ссылке" />
+              </a>
+            </li>
+            <li class="brands__item">
+              <a class="brands__link link" href="#">
+                <span class="visually-hidden">Bosch</span>
+                <img class="brands__img" src="img/bosch.svg" alt="Bosch" />
+                <img class="brands__img brands__img--go-to" src="img/go.svg" alt="Перейти по ссылке" />
+              </a>
+            </li>
+            <li class="brands__item">
+              <a class="brands__link link" href="#">
+                <span class="visually-hidden">HP</span>
+                <img class="brands__img" src="img/hp.svg" alt="HP" />
+                <img class="brands__img brands__img--go-to" src="img/go.svg" alt="Перейти по ссылке" />
+              </a>
+            </li>
+            <li class="brands__item">
+              <a class="brands__link link" href="#">
+                <span class="visually-hidden">Acer</span>
+                <img class="brands__img" src="img/acer.svg" alt="Acer" />
+                <img class="brands__img brands__img--go-to" src="img/go.svg" alt="Перейти по ссылке" />
+              </a>
+            </li>
+            <li class="brands__item">
+              <a class="brands__link link" href="#">
+                <span class="visually-hidden">Sony</span>
+                <img class="brands__img" src="img/sony.svg" alt="Sony" />
+                <img class="brands__img brands__img--go-to" src="img/go.svg" alt="Перейти по ссылке" />
+              </a>
+            </li>
+            <li class="brands__item">
+              <a class="brands__link link" href="#">
+                <span class="visually-hidden">Lenovo</span>
+                <img class="brands__img" src="img/lenovo.svg" alt="Lenovo" />
+                <img class="brands__img brands__img--go-to" src="img/go.svg" alt="Перейти по ссылке" />
+              </a>
+            </li>
+            <li class="brands__item">
+              <a class="brands__link link" href="#">
+                <span class="visually-hidden">Samsung</span>
+                <img class="brands__img" src="img/samsung.svg" alt="Samsung" />
+                <img class="brands__img brands__img--go-to" src="img/go.svg" alt="Перейти по ссылке" />
+              </a>
+            </li>
+            <li class="brands__item">
+              <a class="brands__link link" href="#">
+                <span class="visually-hidden">Apple</span>
+                <img class="brands__img" src="img/apple.svg" alt="Apple" />
+                <img class="brands__img brands__img--go-to" src="img/go.svg" alt="Перейти по ссылке" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <aside class="aside-menu">
       <nav class="aside-menu__nav">
@@ -137,7 +223,7 @@
             <img class="aside-menu__logo" src="img/group.svg" alt="CPS Логотип" />
           </div>
           <div class="aside-menu__block">
-            <button class="aside-menu__button button" type="button">
+            <button class="aside-menu__button aside-menu__close-button button" type="button">
               <span class="button__text visually-hidden">Закрыть меню</span>
               <img class="aside-menu__img" src="img/burger_close.svg" alt="Меню" />
             </button>
@@ -212,5 +298,6 @@
     </aside>
     <!-- по умолчанию добавляем класс visually-hidden чтобы overlay был скрыт. Я не сделал это для сдачи блока 1.4 -->
     <div class="overlay"></div>
+    <script src="js/main.js"></script>
   </body>
 </html>

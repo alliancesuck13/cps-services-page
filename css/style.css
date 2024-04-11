@@ -59,10 +59,40 @@ body {
   border: none;
 
   cursor: pointer;
+  transition: 400ms;
+}
+
+.b-block__img,
+.aside-menu__img {
+  transition: 400ms;
+}
+
+.button:hover .b-block__img,
+.button:hover .aside-menu__img {
+  transform: scale(1.2);
+  color: #7e7e82;
+}
+
+.button:hover {
+  color: #7e7e82;
 }
 
 .i-list__button {
   color: #7e7e82;
+}
+
+.i-list__link {
+  transition: 400ms;
+}
+
+.i-list__link:hover {
+  color: #000000;
+}
+
+.section-block__text--show {
+  overflow: visible;
+  max-height: 500px;
+  height: auto;
 }
 
 .aside-menu {
@@ -81,6 +111,12 @@ body {
   font-weight: 600;
 
   overflow: auto;
+
+  transition: 400ms;
+}
+
+.aside-menu--closed {
+  transform: translateX(-400px);
 }
 
 .aside-menu__header {
