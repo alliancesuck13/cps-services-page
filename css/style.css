@@ -1,7 +1,7 @@
 /* Это основной css файл, где прописаны все глобальные стили ко всем элементам. */
 
-@import "desktop_1120/desktop.css" screen and (min-width: 1120px);
-@import "tablet_768/tablet.css" screen and (min-width: 767.9px) and (max-width: 1119.9px);
+@import "desktop_1120/desktop.css" screen and (min-width: 1440px);
+@import "tablet_768/tablet.css" screen and (min-width: 767.9px) and (max-width: 1439.9px);
 @import "mobile_320/mobile.css" screen and (min-width: 319.9px) and (max-width: 767.9px);
 @import "visually-hidden.css";
 
@@ -95,30 +95,6 @@ body {
   height: auto;
 }
 
-.aside-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  width: 320px;
-  height: 100%;
-
-  z-index: 20;
-
-  box-shadow: 16px 0 50px 0px rgba(14, 24, 80, 0.2);
-  background-color: #fff;
-
-  font-weight: 600;
-
-  overflow: auto;
-
-  transition: 400ms;
-}
-
-.aside-menu--closed {
-  transform: translateX(-400px);
-}
-
 .aside-menu__header {
   display: flex;
   margin-left: 24px;
@@ -130,12 +106,6 @@ body {
 .aside-menu__nav {
   display: flex;
   flex-direction: column;
-}
-
-.aside-menu__block--with-logo {
-  order: 1;
-  margin-left: 16px;
-  margin-right: 78px;
 }
 
 .aside-menu__block:last-child {
@@ -182,19 +152,6 @@ body {
   transform: translateY(-7px);
 }
 
-.aside-menu__footer {
-  position: absolute;
-  bottom: 0;
-  width: 222px;
-  max-height: 188px;
-  padding-bottom: 32px;
-}
-
-@media screen and (max-height: 765px) {
-  .aside-menu__footer {
-    position: static;
-  }
-}
 
 .aside-menu__footer-block {
   margin-left: 24px;
@@ -237,6 +194,47 @@ body {
 
 .aside-menu__footer-link--selected {
   color: #7e7e82;
+}
+
+/* адаптировать  */
+
+.brands__list--show {
+  height: auto;
+  overflow: visible;
+}
+
+.brands__img {
+  transition: 400ms;
+}
+
+.brands__link:hover .brands__img--go-to {
+  transform: scale(1.2);
+}
+
+.brands__link:hover {
+  box-shadow: inset 0 0 50px -40px rgba(0, 0, 0, 0.452);
+}
+
+.brands__img--go-to {
+  margin-right: 16px;
+}
+
+.brands__img--logo {
+  margin-left: 16px;
+}
+
+.show-brands__button {
+  font-family: "TT Lakes Condensed", Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+
+  margin-left: 32px;
+  margin-bottom: 16px;
+}
+
+.show-brands__button::before {
+  content: url(../img/icon.svg);
+  margin-right: 8px;
 }
 
 .overlay {
