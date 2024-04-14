@@ -126,7 +126,8 @@
   top: 0;
   left: 0;
 
-  width: 320px;
+  min-width: 320px;
+  max-width: 360px;
   height: 100%;
 
   z-index: 20;
@@ -170,21 +171,17 @@
   font-size: 16px;
   font-weight: normal;
 
-  padding: 16px 24px;
+  padding: 16px;
   background-image: linear-gradient(to right, #f8f8f8, #fff);
 
   text-transform: uppercase;
 }
 
 .brands__list {
-  margin-left: 24px;
-  height: 165px;
-  display: flex;
-  overflow: hidden;
+  margin-left: 16px;
 }
 
 .brands__item {
-  margin-right: 24px;
 }
 
 .brands__link {

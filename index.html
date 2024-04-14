@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <title>CPS: Услуги и сервисы</title>
 </head>
 
@@ -138,79 +140,79 @@
         <div class="brands-block">
           <h2 class="brands__title">Ремонт техники различных брендов</h2>
         </div>
-        <div class="brands-block">
-          <ul class="brands__list list">
-            <li class="brands__item">
+        <div class="brands-block brands-block--is-swiper swiper">
+          <ul class="brands__list list swiper-wrapper">
+            <li class="brands__item swiper-slide">
               <a class="brands__link link" href="#">
                 <span class="visually-hidden">Lenovo</span>
                 <img class="brands__img brands__img--logo" src="img/lenovo.svg" alt="Lenovo" />
                 <img class="brands__img brands__img--go-to" src="img/go.svg" alt="Перейти по ссылке" />
               </a>
             </li>
-            <li class="brands__item">
+            <li class="brands__item swiper-slide">
               <a class="brands__link link" href="#">
                 <span class="visually-hidden">Samsung</span>
                 <img class="brands__img brands__img--logo" src="img/samsung.svg" alt="Samsung" />
                 <img class="brands__img brands__img--go-to" src="img/go.svg" alt="Перейти по ссылке" />
               </a>
             </li>
-            <li class="brands__item">
+            <li class="brands__item swiper-slide">
               <a class="brands__link link" href="#">
                 <span class="visually-hidden">Apple</span>
                 <img class="brands__img brands__img--logo" src="img/apple.svg" alt="Apple" />
                 <img class="brands__img brands__img--go-to" src="img/go.svg" alt="Перейти по ссылке" />
               </a>
             </li>
-            <li class="brands__item">
+            <li class="brands__item swiper-slide">
               <a class="brands__link link" href="#">
                 <span class="visually-hidden">ViewSonic</span>
                 <img class="brands__img brands__img--logo" src="img/viewsonic.svg" alt="ViewSonic" />
                 <img class="brands__img brands__img--go-to" src="img/go.svg" alt="Перейти по ссылке" />
               </a>
             </li>
-            <li class="brands__item">
+            <li class="brands__item swiper-slide">
               <a class="brands__link link" href="#">
                 <span class="visually-hidden">Bosch</span>
                 <img class="brands__img brands__img--logo" src="img/bosch.svg" alt="Bosch" />
                 <img class="brands__img brands__img--go-to" src="img/go.svg" alt="Перейти по ссылке" />
               </a>
             </li>
-            <li class="brands__item">
+            <li class="brands__item swiper-slide">
               <a class="brands__link link" href="#">
                 <span class="visually-hidden">HP</span>
                 <img class="brands__img brands__img--logo" src="img/hp.svg" alt="HP" />
                 <img class="brands__img brands__img--go-to" src="img/go.svg" alt="Перейти по ссылке" />
               </a>
             </li>
-            <li class="brands__item">
+            <li class="brands__item swiper-slide">
               <a class="brands__link link" href="#">
                 <span class="visually-hidden">Acer</span>
                 <img class="brands__img brands__img--logo" src="img/acer.svg" alt="Acer" />
                 <img class="brands__img brands__img--go-to" src="img/go.svg" alt="Перейти по ссылке" />
               </a>
             </li>
-            <li class="brands__item">
+            <li class="brands__item swiper-slide">
               <a class="brands__link link" href="#">
                 <span class="visually-hidden">Sony</span>
                 <img class="brands__img brands__img--logo" src="img/sony.svg" alt="Sony" />
                 <img class="brands__img brands__img--go-to" src="img/go.svg" alt="Перейти по ссылке" />
               </a>
             </li>
-            <li class="brands__item">
+            <li class="brands__item swiper-slide">
               <a class="brands__link link" href="#">
                 <span class="visually-hidden">Lenovo</span>
                 <img class="brands__img brands__img--logo" src="img/lenovo.svg" alt="Lenovo" />
                 <img class="brands__img brands__img--go-to" src="img/go.svg" alt="Перейти по ссылке" />
               </a>
             </li>
-            <li class="brands__item">
+            <li class="brands__item swiper-slide">
               <a class="brands__link link" href="#">
                 <span class="visually-hidden">Samsung</span>
                 <img class="brands__img brands__img--logo" src="img/samsung.svg" alt="Samsung" />
                 <img class="brands__img brands__img--go-to" src="img/go.svg" alt="Перейти по ссылке" />
               </a>
             </li>
-            <li class="brands__item">
+            <li class="brands__item swiper-slide">
               <a class="brands__link link" href="#">
                 <span class="visually-hidden">Apple</span>
                 <img class="brands__img brands__img--logo" src="img/apple.svg" alt="Apple" />
@@ -218,6 +220,7 @@
               </a>
             </li>
           </ul>
+          <div class="swiper-pagination"></div>
         </div>
         <button class="show-brands__button button">
           Показать все
@@ -305,9 +308,11 @@
       </nav>
     </aside>
   </div>
-  <!-- по умолчанию добавляем класс visually-hidden чтобы overlay был скрыт. Я не сделал это для сдачи блока 1.4 -->
   <div class="overlay visually-hidden"></div>
   <script src="js/main.js"></script>
+  <script>
+    
+  </script>
 </body>
 
 </html>

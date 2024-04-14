@@ -81,12 +81,10 @@ body {
   color: #7e7e82;
 }
 
-.i-list__link {
-  transition: 400ms;
-}
-
 .i-list__link:hover {
-  color: #000000;
+  background-color: #ffffff;
+  border: 2px solid #b8ffec;
+  border-radius: 6px;
 }
 
 .section-block__text--show {
@@ -195,8 +193,6 @@ body {
 .aside-menu__footer-link--selected {
   color: #7e7e82;
 }
-
-/* адаптировать  */
 
 .brands__list--show {
   height: auto;
