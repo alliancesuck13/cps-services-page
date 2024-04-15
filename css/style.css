@@ -77,14 +77,8 @@ body {
   color: #7e7e82;
 }
 
-.i-list__button {
-  color: #7e7e82;
-}
-
 .i-list__link:hover {
-  background-color: #ffffff;
-  border: 2px solid #b8ffec;
-  border-radius: 6px;
+  color: black;
 }
 
 .section-block__text--show {

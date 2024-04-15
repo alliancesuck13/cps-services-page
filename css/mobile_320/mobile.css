@@ -175,13 +175,14 @@
   background-image: linear-gradient(to right, #f8f8f8, #fff);
 
   text-transform: uppercase;
+
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .brands__list {
+  margin-top: 0;
   margin-left: 16px;
-}
-
-.brands__item {
 }
 
 .brands__link {
@@ -201,4 +202,27 @@
 
 .show-brands__button {
   display: none;
+}
+
+.swiper {
+  height: 120px;
+}
+
+.swiper-pagination span {
+  background-color: #B5B6BC;
+  padding: 2px;
+}
+
+.brands-block--without-swiper {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+
+  overflow: hidden;
 }
