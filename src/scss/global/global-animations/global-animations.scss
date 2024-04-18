@@ -1,0 +1,10 @@
+.b-block__img,
+.aside-menu__img {
+  transition: 400ms;
+}
+
+.button:hover .b-block__img,
+.button:hover .aside-menu__img {
+  transform: scale(1.2);
+  color: #7e7e82;
+}

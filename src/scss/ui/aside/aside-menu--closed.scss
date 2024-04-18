@@ -1,0 +1,5 @@
+.aside-menu--closed {
+  @media (min-width: $mob-min-width) and (max-width: $tab-max-width) {
+    transform: translateX(-400px) !important;
+  }
+}

@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'TT Lakes Condensed';
+  src: local('TT Lakes Condensed'),
+    url('../fonts/TTLakes-DemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes Condensed';
+  src: local('TT Lakes Condensed'),
+    url('../fonts/TTLakes-Bold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes Condensed';
+  src: local('TT Lakes Condensed'),
+    url('../fonts/TTLakes-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

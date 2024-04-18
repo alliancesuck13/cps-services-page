@@ -1,0 +1,52 @@
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.line {
+  height: 32px;
+  border-left: 2px solid #eaeaea;
+}
+
+.button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+  transition: 400ms;
+
+  &:hover {
+    color: #7e7e82;
+  }
+}
+
+.brands__list--show {
+  height: auto !important;
+  overflow: visible !important;
+}
+
+.section-block__text--show {
+  overflow: visible !important;
+  max-height: 500px !important;
+  height: auto !important;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 10;
+
+  background-color: white;
+  opacity: 0.95;
+}
