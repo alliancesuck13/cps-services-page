@@ -9,7 +9,8 @@
     display: grid;
     grid-template-areas:
       'aside header'
-      'aside main';
+      'aside main'
+      'aside footer';
 
     .main,
     .header {
