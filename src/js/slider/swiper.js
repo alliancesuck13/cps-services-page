@@ -2,6 +2,7 @@
 
 export const initSwiper = () => {
   new Swiper(".swiper", {
+    spaceBetween: 16,
     slidesPerView: 1.25,
     loop: true,
     pagination: {

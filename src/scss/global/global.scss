@@ -18,10 +18,44 @@
   border: none;
 
   cursor: pointer;
-  transition: 400ms;
+  transition: $transition;
 
   &:hover {
     color: #7e7e82;
+  }
+}
+
+.general-button {
+  font-family: $font-stack;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+
+  padding: 8px 12px;
+  padding-right: 0;
+  border-radius: 35px;
+
+  color: #fff;
+  background-color: #FF3E79;
+
+  transition: $transition ease-in-out;
+
+  text-wrap: nowrap;
+
+  &:after {
+    content: url("../img/dropdown.svg");
+    margin-left: 17px;
+    margin-right: 11px;
+    vertical-align: middle;
+  }
+
+  &:hover {
+    color: #fff;
+    filter: hue-rotate(-6deg);
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.151));
+    box-shadow: inset 0 0 20px -15px black;
+
+    transform: scale(1.01);
   }
 }
 
@@ -30,12 +64,21 @@
   overflow: visible !important;
 }
 
+.repair__list--show {
+  height: auto !important;
+  overflow: visible !important;
+}
+
+.swiper-pagination span {
+  background-color: $swiper-pagination-color;
+  padding: 2px;
+}
+
 .section-block__text--show {
   overflow: visible !important;
   max-height: 500px !important;
   height: auto !important;
 }
-
 
 .overlay {
   position: fixed;

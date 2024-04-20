@@ -4,6 +4,8 @@ export const makeEventClose = (element, variable, selector, overlayVariable, hid
   element.addEventListener("click", (evt) => {
     variable.classList.add(selector);
 
+    document.body.style.overflow = 'visible';
+
     if (overlayVariable) {
       overlayVariable.classList.add(hideSelector);
     }
@@ -13,6 +15,8 @@ export const makeEventClose = (element, variable, selector, overlayVariable, hid
 export const makeEventOpen = (element, variable, selector, overlayVariable, hideSelector) => {
   element.addEventListener("click", (evt) => {
     variable.classList.remove(selector);
+
+    document.body.style.overflow = 'hidden';
 
     if (overlayVariable) {
       overlayVariable.classList.remove(hideSelector);

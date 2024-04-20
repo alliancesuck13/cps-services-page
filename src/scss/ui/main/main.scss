@@ -1,4 +1,5 @@
 .main {
+
   // desktop 1440px
   @media (min-width: $desk-min-width) {
     grid-area: main;
@@ -99,11 +100,10 @@
         &--go-to {
           margin-right: 16px;
         }
-        
+
         &--logo {
           margin-left: 16px;
         }
-        
       }
 
       .brands-block--without-swiper {
@@ -131,10 +131,11 @@
             justify-content: space-between;
             align-items: center;
 
-            transition: 400ms;
+            transition: $transition;
 
             &:hover {
               box-shadow: inset 0 0 50px -40px rgba(0, 0, 0, 0.452);
+
               .brands__img--go-to {
                 transform: scale(1.2);
               }
@@ -147,7 +148,7 @@
         font-family: $font-stack;
         font-size: $default-font-size;
         font-weight: 600;
-      
+
         margin-left: 32px;
         margin-bottom: 16px;
 
@@ -172,10 +173,224 @@
       }
     }
 
+    .repair {
+      &__title {
+        color: $brands-title-color;
+        font-size: $default-font-size;
+        font-weight: normal;
+        max-width: 1440px;
+
+        padding: 16px 32px;
+        background-image: linear-gradient(to right, #f8f8f8, #fff);
+
+        text-transform: uppercase;
+      }
+
+      .repair-wrapper--without-swiper {
+        .repair__list {
+          margin-left: $desk-default-horizontal-margin;
+          height: 165px;
+          display: grid;
+          grid-template-columns: 240px 240px 240px 240px;
+          grid-template-rows: 160px 160px;
+
+          row-gap: $desk-default-row-gap;
+          column-gap: $desk-default-column-gap;
+          overflow-y: hidden;
+
+          .repair__link {
+            display: flex;
+            height: 160px;
+            min-width: 224px;
+            max-width: 240px;
+
+            background-color: $brands-link-background-color;
+            border: 1px solid $brands-link-border-color;
+            border-radius: 6px;
+
+            transition: $transition;
+
+            color: black;
+
+            .link-text {
+              align-self: flex-start;
+              margin-right: auto;
+              margin-left: 16px;
+              margin-top: 16px;
+            }
+
+            .repair__img {
+              transition: $transition;
+            }
+
+            &:hover {
+              box-shadow: inset 0 0 50px -45px rgba(0, 0, 0, 0.452);
+              color: $brands-title-color;
+
+              .repair__img--go-to {
+                transform: scale(1.2);
+              }
+            }
+
+            .repair__img--go-to {
+              align-self: flex-end;
+              margin-left: auto;
+              margin-bottom: 16px;
+              margin-right: 16px;
+            }
+          }
+        }
+
+        .show-repair__button {
+          font-family: $font-stack;
+          font-size: $default-font-size;
+          font-weight: 600;
+
+          margin-left: 32px;
+          margin-bottom: 16px;
+
+          &:before {
+            content: url('../img/icon.svg');
+            margin-right: 8px;
+          }
+        }
+      }
+
+      .repair-wrapper--with-swiper {
+        display: none;
+      }
+    }
+
+    .price {
+      &__title {
+        color: $brands-title-color;
+        font-size: $default-font-size;
+        font-weight: normal;
+        max-width: 1440px;
+
+        padding: 16px 32px;
+        background-image: linear-gradient(to right, #f8f8f8, #fff);
+
+        text-transform: uppercase;
+      }
+
+      .table {
+        padding: 16px 32px;
+        width: 100%;
+        font-size: 14px;
+
+        .table-head {
+          background-color: #f8f8f8;
+          padding: 0;
+
+          .table__header {
+            text-align: left;
+            padding-bottom: 16px;
+
+            font-weight: normal;
+
+            color: $brands-title-color;
+          }
+
+          .table__header:first-child {
+            padding-left: 24px;
+            min-width: 344px;
+          }
+
+          .table__header:nth-child(2) {
+            min-width: 150px;
+          }
+
+          .table__header:nth-child(3) {
+            min-width: 150px;
+          }
+        }
+
+        .table-body {
+          background-color: #ffffff;
+          position: relative;
+
+          .table__row {
+            box-shadow: 0 1px 0 0 #eaeaea,
+              inset -24px 0 0 #fff,
+              inset 24px 0 0 #fff;
+
+            .table__data {
+              padding: 16px 0;
+            }
+
+            .table__data:first-child {
+              padding-left: 24px;
+            }
+
+            .table__data:last-child {
+              text-align: right;
+              padding-right: 24px;
+            }
+          }
+
+          .table__row:first-child {
+            .table__data:first-child {
+              border-radius: 8px 0 0 0;
+            }
+
+            .table__data:last-child {
+              border-radius: 0 8px 0 0;
+            }
+          }
+
+          .table__row:last-child {
+            box-shadow: 0 1px 0 0 #fff,
+              inset -24px 0 0 #fff,
+              inset 24px 0 0 #fff;
+
+            .table__data:first-child {
+              border-radius: 0 0 0 8px;
+            }
+
+            .table__data:last-child {
+              border-radius: 0 0 8px 0;
+            }
+
+            &:after {
+              width: 0;
+            }
+          }
+        }
+      }
+
+      .additional-info {
+        padding-left: 32px;
+      }
+
+      .get-offer-link {
+        padding-left: 32px;
+        color: black;
+        font-weight: 600;
+
+        transition: $transition;
+
+        &:hover {
+          color: #7E7E82;
+        }
+
+        &:after {
+          content: url("../img/dropdown-link.svg");
+          vertical-align: middle;
+          margin-left: 9px;
+        }
+      }
+    }
+
+    .price-wrapper--with-swiper {
+      display: none;
+    }
+
     .overlay {
       display: none;
     }
   }
+
   // tablet 768px
   @media (min-width: $tab-min-width) and (max-width: $tab-max-width) {
     .title {
@@ -278,11 +493,11 @@
 
       .brands__img {
         transition: $transition;
-        
+
         &--go-to {
           margin-right: 16px;
         }
-        
+
         &--logo {
           margin-left: 16px;
         }
@@ -294,12 +509,15 @@
           height: 165px;
           display: grid;
           grid-template-columns: 224px 224px 224px;
+
           @media (min-width: $tab-xs-width) {
             grid-template-columns: 224px 224px 224px 224px;
           }
+
           @media (min-width: $tab-s-width) {
             grid-template-columns: 224px 224px 224px 224px 224px;
           }
+
           grid-template-rows: 72px 72px 72px;
 
           row-gap: $tab-default-row-gap;
@@ -322,6 +540,7 @@
 
             &:hover {
               box-shadow: inset 0 0 50px -40px rgba(0, 0, 0, 0.452);
+
               .brands__img--go-to {
                 transform: scale(1.2);
               }
@@ -334,8 +553,8 @@
         font-family: $font-stack;
         font-size: $default-font-size;
         font-weight: 600;
-      
-        margin-left: 32px;
+
+        margin-left: 24px;
         margin-bottom: 16px;
 
         &:before {
@@ -358,7 +577,229 @@
         overflow: hidden;
       }
     }
+
+    .repair {
+      &__title {
+        color: $brands-title-color;
+        font-size: $default-font-size;
+        font-weight: normal;
+        max-width: 1440px;
+
+        padding: 16px 24px;
+        background-image: linear-gradient(to right, #f8f8f8, #fff);
+
+        text-transform: uppercase;
+      }
+
+      .repair-wrapper--without-swiper {
+        .repair__list {
+          margin-left: $tab-default-horizontal-margin;
+          height: 165px;
+          display: grid;
+          grid-template-columns: 224px 224px 224px;
+
+          @media (min-width: $tab-xs-width) {
+            grid-template-columns: 224px 224px 224px 224px;
+          }
+
+          @media (min-width: $tab-s-width) {
+            grid-template-columns: 224px 224px 224px 224px 224px;
+          }
+
+          row-gap: $tab-default-row-gap;
+          column-gap: $tab-default-column-gap;
+          overflow-y: hidden;
+
+          .repair__link {
+            display: flex;
+            height: 160px;
+            min-width: 224px;
+            max-width: 240px;
+
+            background-color: $brands-link-background-color;
+            border: 1px solid $brands-link-border-color;
+            border-radius: 6px;
+
+            transition: $transition;
+
+            color: black;
+
+            .link-text {
+              align-self: flex-start;
+              margin-right: auto;
+              margin-left: 16px;
+              margin-top: 16px;
+            }
+
+            .repair__img {
+              transition: $transition;
+            }
+
+            &:hover {
+              box-shadow: inset 0 0 50px -45px rgba(0, 0, 0, 0.452);
+              color: $brands-title-color;
+
+              .repair__img--go-to {
+                transform: scale(1.2);
+              }
+            }
+
+            .repair__img--go-to {
+              align-self: flex-end;
+              margin-left: auto;
+              margin-bottom: 16px;
+              margin-right: 16px;
+            }
+          }
+        }
+
+        .show-repair__button {
+          font-family: $font-stack;
+          font-size: $default-font-size;
+          font-weight: 600;
+
+          margin-left: 24px;
+          margin-bottom: 16px;
+
+          &:before {
+            content: url('../img/icon.svg');
+            margin-right: 8px;
+          }
+        }
+      }
+
+      .repair-wrapper--with-swiper {
+        display: none;
+      }
+    }
+
+    .price {
+      &__title {
+        color: $brands-title-color;
+        font-size: $default-font-size;
+        font-weight: normal;
+        max-width: 1440px;
+
+        padding: 16px 24px;
+        background-image: linear-gradient(to right, #f8f8f8, #fff);
+
+        text-transform: uppercase;
+      }
+
+      .table {
+        padding: 16px 24px;
+        width: 100%;
+        font-size: 14px;
+
+        .table-head {
+          background-color: #f8f8f8;
+          padding: 0;
+
+          .table__header {
+            text-align: left;
+            padding-bottom: 16px;
+
+            font-weight: normal;
+
+            color: $brands-title-color;
+          }
+
+          .table__header:first-child {
+            padding-left: 16px;
+            min-width: 246px;
+          }
+
+          .table__header:nth-child(2) {
+            min-width: 100px;
+          }
+
+          .table__header:nth-child(3) {
+            min-width: 66px;
+          }
+        }
+
+        .table-body {
+          background-color: #ffffff;
+
+          .table__row {
+            box-shadow: 0 1px 0 0 #eaeaea,
+              inset -16px 0 0 #fff,
+              inset 16px 0 0 #fff;
+
+            .table__data {
+              padding: 16px 0;
+
+            }
+
+            .table__data:first-child {
+              padding-left: 16px;
+            }
+
+            .table__data:last-child {
+              text-align: right;
+              padding-right: 16px;
+            }
+          }
+
+          .table__row:first-child {
+            .table__data:first-child {
+              border-radius: 8px 0 0 0;
+            }
+
+            .table__data:last-child {
+              border-radius: 0 8px 0 0;
+            }
+          }
+
+          .table__row:last-child {
+            box-shadow: 0 1px 0 0 #fff,
+              inset -16px 0 0 #fff,
+              inset 16px 0 0 #fff;
+
+            .table__data:first-child {
+              border-radius: 0 0 0 8px;
+            }
+
+            .table__data:last-child {
+              border-radius: 0 0 8px 0;
+            }
+
+            &:after {
+              width: 0;
+            }
+          }
+
+        }
+      }
+
+      .additional-info {
+        padding-left: 24px;
+      }
+
+      .get-offer-link {
+        padding-left: 24px;
+        color: black;
+        font-weight: 600;
+
+        transition: $transition;
+
+        &:hover {
+          color: #7E7E82;
+        }
+
+        &:after {
+          content: url("../img/dropdown-link.svg");
+          vertical-align: middle;
+          margin-left: 9px;
+        }
+      }
+    }
+
+    .price-wrapper--with-swiper {
+      display: none;
+    }
   }
+
   // mobile 320px
   @media (max-width: $mob-max-width) {
     .title {
@@ -371,7 +812,7 @@
       &:before {
         content: url('../img/highlight.svg');
         position: absolute;
-        top: 105px;
+        top: 115px;
         left: 0;
       }
     }
@@ -461,7 +902,7 @@
         &--go-to {
           margin-right: 16px;
         }
-        
+
         &--logo {
           margin-left: 16px;
         }
@@ -487,6 +928,7 @@
 
           &:hover {
             box-shadow: inset 0 0 50px -40px rgba(0, 0, 0, 0.452);
+
             .brands__img--go-to {
               transform: scale(1.2);
             }
@@ -500,26 +942,177 @@
 
       .swiper {
         height: 120px;
-
-        .swiper-pagination span {
-          background-color: $swiper-pagination-color;
-          padding: 2px;
-        }
       }
 
       .brands-block--without-swiper {
-        position: absolute;
-
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-
-        clip: rect(0 0 0 0);
-
-        overflow: hidden;
+        display: none;
       }
+    }
+
+    .repair {
+      &__title {
+        color: $brands-title-color;
+        font-size: $default-font-size;
+        font-weight: normal;
+
+        padding: 16px;
+        background-image: linear-gradient(to right, #f8f8f8, #fff);
+
+        text-transform: uppercase;
+
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+
+      .repair-wrapper--without-swiper {
+        display: none;
+      }
+
+      .repair-wrapper--with-swiper {
+        .repair__list {
+          margin-left: $mob-default-horizontal-margin;
+          margin-top: 0;
+          height: 190px;
+
+          .repair__link {
+            display: flex;
+            height: 160px;
+            min-width: 224px;
+            max-width: 240px;
+
+            background-color: $brands-link-background-color;
+            border: 1px solid $brands-link-border-color;
+            border-radius: 6px;
+
+            transition: $transition;
+
+            color: black;
+
+            .link-text {
+              align-self: flex-start;
+              margin-right: auto;
+              margin-left: 16px;
+              margin-top: 16px;
+            }
+
+            .repair__img {
+              transition: $transition;
+            }
+
+            &:hover {
+              box-shadow: inset 0 0 50px -45px rgba(0, 0, 0, 0.452);
+              color: $brands-title-color;
+
+              .repair__img--go-to {
+                transform: scale(1.2);
+              }
+            }
+
+            .repair__img--go-to {
+              align-self: flex-end;
+              margin-left: auto;
+              margin-bottom: 16px;
+              margin-right: 16px;
+            }
+          }
+        }
+      }
+    }
+
+    .price {
+      &__title {
+        color: $brands-title-color;
+        font-size: $default-font-size;
+        font-weight: normal;
+
+        padding: 16px 24px;
+        background-image: linear-gradient(to right, #f8f8f8, #fff);
+
+        text-transform: uppercase;
+      }
+
+      .price__list {
+        margin-left: $mob-default-horizontal-margin;
+        margin-top: 0;
+
+        height: 260px;
+      }
+
+      .price__item {
+        
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      .item-wrapper {
+        position: relative;
+        height: 200px;
+        max-width: 260px;
+        padding: 16px;
+        background-color: #fff;
+
+        border-radius: 6px;
+      }
+
+      .text-wrapper {
+        margin-bottom: 16px;
+
+        p {
+          margin: 0;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .repair-service,
+      .repair-price,
+      .repair-time {
+        color: #7E7E82;
+      }
+
+      .button-order--in-swiper {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+      }
+
+      .additional-info {
+        margin-right: 16px;
+      }
+
+      .additional-info {
+        padding-left: 16px;
+      }
+
+      .get-offer-link {
+        display: block;
+        max-width: 193px;
+        @media (min-width: 360px) {
+          text-wrap: nowrap;
+        }
+        padding-left: 16px;
+        color: black;
+        font-weight: 600;
+
+        transition: $transition;
+
+        &:hover {
+          color: #7E7E82;
+        }
+
+        &:after {
+          content: url("../img/dropdown-link.svg");
+          vertical-align: middle;
+          margin-left: 9px;
+        }
+      }
+    }
+
+    .price-wrapper--without-swiper {
+      display: none;
     }
   }
 }
