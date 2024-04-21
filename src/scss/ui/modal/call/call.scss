@@ -1,0 +1,82 @@
+.call {
+  &__title {
+    font-size: 24px;
+  }
+
+  .call__title:before {
+    content: url("../img/highlight.svg");
+    position: relative;
+    left: -16px;
+    top: 10px;
+  }
+
+  @media (min-width: $desk-min-width) {
+    &__header {
+      padding: 40px 32px;
+      padding-bottom: 0;
+    }
+
+    &__body {
+      padding: 40px 32px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .modal-close-button {
+      position: absolute;
+      transform: translate(-80px, 10px);
+    }
+  }
+
+  @media (min-width: 320px) {
+
+    &__header {
+      display: flex;
+      flex-direction: column;
+      padding: 24px 16px;
+      padding-bottom: 0;
+    }
+
+    &__body {
+      padding: 24px 16px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  
+    .modal-close-button {
+      align-self: flex-start;
+      order: -1;
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+
+    &__name {
+      margin-top: 16px;
+    }
+
+    &__phone {
+      margin-top: 16px;
+    }
+
+    &__email {
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+
+    &__input {
+      color: #B5B6BC;
+      max-width: 376px;
+      padding: 12px 16px;
+
+      border: 1px solid #EAEAEA;
+      border-radius: 8px;
+    }
+  }
+
+  .form__button {
+    align-self: flex-end;
+  }
+}

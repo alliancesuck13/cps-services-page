@@ -58,7 +58,7 @@
             </li>
             <li class="header-list__item header-list__item--hidden">
               <div class="b-block">
-                <button class="b-block__button button" type="button">
+                <button class="b-block__button call-button button" type="button">
                   <span class="button__text visually-hidden">Связаться</span>
                   <img class="b-block__img" src="img/call.svg" alt="Звонок" />
                 </button>
@@ -71,9 +71,9 @@
             </li>
             <li class="header-list__item header-list__item--hidden">
               <div class="b-block">
-                <button class="b-block__button button" type="button">
-                  <span class="button__text visually-hidden">Поддержка</span>
-                  <img class="b-block__img" src="img/chat.svg" alt="Поддержка" />
+                <button class="b-block__button feedback-button button" type="button">
+                  <span class="button__text visually-hidden">Открыть чат</span>
+                  <img class="b-block__img" src="img/chat.svg" alt="Обратная связь" />
                 </button>
               </div>
             </li>
@@ -745,13 +745,13 @@
         <div class="aside-menu__footer">
           <div class="aside-menu__footer-block">
             <div class="aside-menu__button-wrapper">
-              <button class="aside-menu__button button" type="button">
+              <button class="aside-menu__button call-button button" type="button">
                 <span class="button__text visually-hidden">Связаться</span>
                 <img class="aside-menu__img" src="img/call.svg" alt="Связаться" />
               </button>
             </div>
             <div class="aside-menu__button-wrapper">
-              <button class="aside-menu__button button" type="button">
+              <button class="aside-menu__button feedback-button button" type="button">
                 <span class="button__text visually-hidden">Открыть чат</span>
                 <img class="aside-menu__img" src="img/chat.svg" alt="Чат" />
               </button>
@@ -776,9 +776,13 @@
       </nav>
     </aside>
   </div>
-  <div class="feedback modal visually-hidden">
+  <div class="feedback modal modal--hide">
     <div class="feedback__header">
       <h2 class="feedback__title">Обратная связь</h2>
+      <button class="modal-close-button button" type="button">
+        <span class="button__text visually-hidden">Закрыть меню</span>
+        <img class="close-button__img" src="img/burger_close.svg" alt="Закрыть меню" />
+      </button>
     </div>
     <div class="feedback__body">
       <form class="form" method="post">
@@ -790,20 +794,24 @@
           placeholder="Сообщение"></textarea>
         <p class="modal-additional-info">Нажимая “отправить”, вы даете согласие на обработку персональных данных и
           соглашаетесь с нашей <a href="#" class="privacy-policy-link link">политикой конфиденциальности</a></p>
-        <button type="submit" class="form__button button">Отправить</button>
+        <button type="submit" class="form__button general-button button">Отправить</button>
       </form>
     </div>
   </div>
-  <div class="call modal visually-hidden">
+  <div class="call modal modal--hide">
     <div class="call__header">
       <h2 class="call__title">Заказать звонок</h2>
+      <button class="modal-close-button button" type="button">
+        <span class="button__text visually-hidden">Закрыть меню</span>
+        <img class="close-button__img" src="img/burger_close.svg" alt="Закрыть меню" />
+      </button>
     </div>
     <div class="call__body">
       <form class="form" method="post">
         <input type="tel" class="form__input form__phone" name="call__phone" id="call__phone" placeholder="Телефон">
         <p class="modal-additional-info">Нажимая “отправить”, вы даете согласие на обработку персональных данных и
           соглашаетесь с нашей <a href="#" class="privacy-policy-link link">политикой конфиденциальности</a></p>
-        <button type="submit" class="form__button button">Отправить</button>
+        <button type="submit" class="form__button general-button button">Отправить</button>
       </form>
     </div>
   </div>

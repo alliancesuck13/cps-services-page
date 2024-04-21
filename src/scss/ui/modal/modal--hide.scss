@@ -1,0 +1,9 @@
+.modal--hide {
+  @media (min-width: 320px) {
+    transform: translateX(450px);
+  }
+
+  @media (min-width: $desk-min-width) {
+    transform: translateX(550px);
+  }
+}

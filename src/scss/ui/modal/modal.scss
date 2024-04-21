@@ -1,0 +1,31 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  height: 100%;
+
+  z-index: 20;
+
+  box-shadow: -16px 0 50px 0px $aside-menu-box-shadow-color;
+  
+  @media (min-width: 320px) {
+    width: 320px;
+  }
+  
+  @media (min-width: 1440px) {
+    width: 440px;
+  }
+
+  background-color: #fff;
+  transition: $transition;
+
+  .link {
+    color: #FF3E79;
+    transition: $transition;
+
+    &:hover {
+      color: $list-link-color-hover;
+    }
+  }
+}
