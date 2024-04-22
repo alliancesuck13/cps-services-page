@@ -45,6 +45,7 @@ export const makeEventOpen = (
         variable.classList.remove(selector)
 
         document.body.style.overflow = 'hidden'
+        document.querySelector('.aside-menu').classList.add('aside-menu--closed')
 
         if (overlayVariable) {
           overlayVariable.classList.remove(hideSelector)

@@ -4,8 +4,6 @@ import { makeEventOpen, makeEventClose, makeEventShowAndHide, makeEventChangeWid
 
 import { buttonClose, buttonOpen, asideMenu, overlay, moreLink, sectionBlockText, brandsList, buttonShowBrands, buttonShowRepair, repairList, buttonCloseModal, modalFeedback, buttonOpenFeedback, buttonOpenCall, modalCall } from './events/vars.js'
 
-import { checkMenu } from './checkMenu.js';
-
 import '../scss/style.scss'
 
 makeEventClose(buttonClose, asideMenu, 'aside-menu--closed', overlay, 'visually-hidden');
@@ -24,7 +22,5 @@ makeEventShowAndHide(buttonShowBrands, brandsList, 'brands__list--show', 'Скр
 makeEventShowAndHide(buttonShowRepair, repairList, 'repair__list--show', 'Скрыть', 'Показать все');
 
 makeEventChangeWidthMenu(asideMenu);
-
-checkMenu();
 
 initSwiper();
