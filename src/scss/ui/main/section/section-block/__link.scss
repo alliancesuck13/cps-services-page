@@ -1,0 +1,36 @@
+@media (min-width: 1440px) {
+  .section-block__link {
+    color: $font-color;
+    font-weight: 600;
+    display: none;
+
+    &:before {
+      content: url('../img/icon.svg');
+      margin-right: 8px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439.9px) {
+  .section-block__link {
+    color: $font-color;
+    font-weight: 600;
+
+    &:before {
+      content: url('../img/icon.svg');
+      margin-right: 8px;
+    }
+  }
+}
+
+@media (max-width: 767.9px) {
+  .section-block__link {
+    color: $font-color;
+    font-weight: 600;
+
+    &:before {
+      content: url('../img/icon.svg');
+      margin-right: 8px;
+    }
+  }
+}

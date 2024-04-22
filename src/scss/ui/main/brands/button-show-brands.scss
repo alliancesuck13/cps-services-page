@@ -1,0 +1,37 @@
+@media (min-width: 1440px) {
+  .button-show-brands {
+    font-family: $font-stack;
+    font-size: 16px;
+    font-weight: 600;
+
+    margin-left: 32px;
+    margin-bottom: 16px;
+
+    &:before {
+      content: url('../img/icon.svg');
+      margin-right: 8px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439.9px) {
+  .button-show-brands {
+    font-family: $font-stack;
+    font-size: 16px;
+    font-weight: 600;
+
+    margin-left: 24px;
+    margin-bottom: 16px;
+
+    &:before {
+      content: url('../img/icon.svg');
+      margin-right: 8px;
+    }
+  }
+}
+
+@media (max-width: 767.9px) {
+  .button-show-brands {
+    display: none;
+  }
+}

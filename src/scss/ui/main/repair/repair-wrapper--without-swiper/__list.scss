@@ -1,0 +1,38 @@
+@media (min-width: 1440px) {
+  .repair-wrapper--without-swiper {
+    .repair__list {
+      margin-left: 32px;
+      height: 165px;
+      display: grid;
+      grid-template-columns: 240px 240px 240px 240px;
+      grid-template-rows: 160px 160px;
+
+      row-gap: $desk-default-row-gap;
+      column-gap: $desk-default-column-gap;
+      overflow-y: hidden;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439.9px) {
+  .repair-wrapper--without-swiper {
+    .repair__list {
+      margin-left: 24px;
+      height: 165px;
+      display: grid;
+      grid-template-columns: 224px 224px 224px;
+
+      @media (min-width: $tab-xs-width) {
+        grid-template-columns: 224px 224px 224px 224px;
+      }
+
+      @media (min-width: $tab-s-width) {
+        grid-template-columns: 224px 224px 224px 224px 224px;
+      }
+
+      row-gap: $tab-default-row-gap;
+      column-gap: $tab-default-column-gap;
+      overflow-y: hidden;
+    }
+  }
+}

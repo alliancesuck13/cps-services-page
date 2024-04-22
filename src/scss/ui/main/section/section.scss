@@ -1,0 +1,16 @@
+@media (min-width: 1440px) {
+  .section {
+    display: flex;
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439.9px) {
+  .section {
+    display: flex;
+
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}

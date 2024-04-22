@@ -1,0 +1,42 @@
+@media (min-width: 1440px) {
+  .brands__title {
+    color: $hover-font-color;
+    font-size: 16px;
+    font-weight: normal;
+    max-width: 1440px;
+
+    padding: 16px 32px;
+    background-image: linear-gradient(to right, $body-color, $white-color);
+
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439.9px) {
+  .brands__title {
+    color: $hover-font-color;
+    font-size: 16px;
+    font-weight: normal;
+
+    padding: 16px 24px;
+    background-image: linear-gradient(to right, $body-color, $white-color);
+
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .brands__title {
+    color: $hover-font-color;
+    font-size: 16px;
+    font-weight: normal;
+
+    padding: 16px;
+    background-image: linear-gradient(to right, #f8f8f8, #fff);
+
+    text-transform: uppercase;
+
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}

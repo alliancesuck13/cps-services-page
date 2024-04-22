@@ -1,0 +1,28 @@
+@media (min-width: 1440px) {
+  .header-wrapper {
+    position: relative;
+    margin-left: auto;
+    transform: translate(341px, 32px);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439.9px) {
+  .header-wrapper {
+    background-color: $white-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 24px;
+    padding-right: 8px;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .header-wrapper {
+    background-color: $white-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 16px;
+  }
+}

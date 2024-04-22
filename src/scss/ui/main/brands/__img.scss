@@ -1,0 +1,11 @@
+.brands__img {
+  transition: $transition;
+
+  &--go-to {
+    margin-right: 16px;
+  }
+
+  &--logo {
+    margin-left: 16px;
+  }
+}

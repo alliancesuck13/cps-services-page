@@ -1,0 +1,11 @@
+@media (min-width: 768px) and (max-width: 1439.9px) {
+  .second-section-block {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .second-section-block {
+    margin: 0;
+  }
+}

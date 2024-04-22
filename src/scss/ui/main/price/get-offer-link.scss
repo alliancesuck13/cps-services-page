@@ -1,0 +1,24 @@
+@media (max-width: 767.9px) {
+  .get-offer-link {
+    display: block;
+    max-width: 193px;
+    @media (min-width: 360px) {
+      text-wrap: nowrap;
+    }
+    padding-left: 16px;
+    color: $font-color;
+    font-weight: 600;
+
+    transition: $transition;
+
+    &:hover {
+      color: $hover-font-color;
+    }
+
+    &:after {
+      content: url("../img/dropdown-link.svg");
+      vertical-align: middle;
+      margin-left: 9px;
+    }
+  }
+}

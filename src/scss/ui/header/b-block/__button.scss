@@ -1,0 +1,14 @@
+@media (min-width: 1440px) {
+  .b-block__button {
+    display: flex;
+  }
+
+  .button__text {
+    font-family: $font-stack;
+    font-weight: 600;
+    cursor: pointer;
+    align-self: center;
+    margin-right: 8px;
+    margin-left: 32px;
+  }
+}

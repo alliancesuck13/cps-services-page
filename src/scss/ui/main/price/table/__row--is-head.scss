@@ -1,0 +1,17 @@
+@media (min-width: 1440px) {
+  .table__row--is-head {
+    background-color: $body-color;
+
+    box-shadow: inset -24px 0 0 $body-color,
+                inset 24px 0 0 $body-color !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439.9px) {
+  .table__row--is-head {
+    background-color: $body-color;
+
+    box-shadow: inset -16px 0 0 $body-color,
+                inset 16px 0 0 $body-color !important;
+  }
+}

@@ -1,0 +1,53 @@
+@media (min-width: 1440px) {
+  .i-list__link {
+    display: block;
+    padding: 8px;
+    white-space: nowrap;
+    font-size: 16px;
+    background-color: $transparent-color;
+    border: none;
+    color: $hover-font-color;
+
+    transition: $transition;
+
+    &:hover {
+      color: $font-color;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439.9px) {
+  .i-list__link {
+    display: block;
+    padding: 8px;
+    white-space: nowrap;
+    font-size: 16px;
+    background-color: $transparent-color;
+    border: none;
+    color: $hover-font-color;
+
+    transition: $transition;
+
+    &:hover {
+      color: $list-link-color-hover;
+    }
+  }
+}
+
+@media (max-width: 767.9px) {
+  .i-list__link {
+    display: block;
+    padding: 8px;
+    white-space: nowrap;
+    font-size: 16px;
+    background-color: $transparent-color;
+    border: none;
+    color: $hover-font-color;
+
+    transition: $transition;
+
+    &:hover {
+      color: $list-link-color-hover;
+    }
+  }
+}

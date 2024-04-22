@@ -1,0 +1,39 @@
+@media (min-width: 1440px) {
+  .get-offer-link {
+    padding-left: 32px;
+    color: $font-color;
+    font-weight: 600;
+
+    transition: $transition;
+
+    &:hover {
+      color: $hover-font-color;
+    }
+
+    &:after {
+      content: url("../img/dropdown-link.svg");
+      vertical-align: middle;
+      margin-left: 9px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439.9px) {
+  .get-offer-link {
+    padding-left: 24px;
+    color: black;
+    font-weight: 600;
+
+    transition: $transition;
+
+    &:hover {
+      color: #7E7E82;
+    }
+
+    &:after {
+      content: url("../img/dropdown-link.svg");
+      vertical-align: middle;
+      margin-left: 9px;
+    }
+  }
+}
