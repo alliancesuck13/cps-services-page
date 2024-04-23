@@ -8,5 +8,5 @@
 .button:hover .aside-menu__img,
 .button:hover .close-button__img {
   transform: scale(1.2);
-  color: #7e7e82;
+  color: $hover-font-color;
 }

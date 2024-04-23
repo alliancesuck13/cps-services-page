@@ -1,0 +1,10 @@
+.aside-menu__link {
+  color: $font-color;
+  white-space: nowrap;
+
+  transition: $transition;
+
+  &:hover {
+    color: $hover-font-color;
+  }
+}

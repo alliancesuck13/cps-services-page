@@ -1,0 +1,13 @@
+@media (min-width: 1440px) {
+  .modal-close-button {
+    position: absolute;
+    transform: translate(-80px, 10px);
+  }
+}
+
+@media (min-width: 320px) {
+  .modal-close-button {
+    align-self: flex-start;
+    order: -1;
+  }
+}

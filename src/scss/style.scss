@@ -12,9 +12,11 @@
 
 @import './ui/main/main.scss';
 @import './ui/main/title.scss';
+
 @import './ui/main/i-list/i-list.scss';
 @import './ui/main/i-list/__link.scss';
 @import './ui/main/i-list/__link--selected.scss';
+
 @import './ui/main/section/section.scss';
 @import './ui/main/section/section-block/section-block.scss';
 @import './ui/main/section/section-block/first-section-block.scss';
@@ -22,6 +24,7 @@
 @import './ui/main/section/section-block/__text.scss';
 @import './ui/main/section/section-block/__link.scss';
 @import './ui/main/section/section-block/__img.scss';
+
 @import './ui/main/brands/__title.scss';
 @import './ui/main/brands/__img.scss';
 @import './ui/main/brands/brands-block--without-swiper/brands-block--without-swiper.scss';
@@ -31,6 +34,7 @@
 @import './ui/main/brands/brands-block--with-swiper/__list.scss';
 @import './ui/main/brands/brands-block--with-swiper/__link.scss';
 @import './ui/main/brands/button-show-brands.scss';
+
 @import './ui/main/repair/__title.scss';
 @import './ui/main/repair/__img.scss';
 @import './ui/main/repair/__img--go-to.scss';
@@ -42,6 +46,7 @@
 @import './ui/main/repair/repair-wrapper--with-swiper/repair-wrapper--with-swiper.scss';
 @import './ui/main/repair/repair-wrapper--with-swiper/__link.scss';
 @import './ui/main/repair/repair-wrapper--with-swiper/__list.scss';
+
 @import './ui/main/price/__title.scss';
 @import './ui/main/price/price-wrapper--without-swiper/price-wrapper--without-swiper.scss';
 @import './ui/main/price/table/table.scss';
@@ -64,16 +69,52 @@
 @import './ui/main/price/get-offer-link.scss';
 
 @import './ui/footer/footer.scss';
+@import './ui/footer/policy-link.scss';
+@import './ui/footer/__info.scss';
 
 @import './ui/aside/aside-menu.scss';
 @import './ui/aside/aside-menu--closed.scss';
+@import './ui/aside/__nav.scss';
+@import './ui/aside/__header.scss';
+@import './ui/aside/__block.scss';
+@import './ui/aside/__block--with-logo.scss';
+@import './ui/aside/__button-wrapper.scss';
+@import './ui/aside/__main.scss';
+@import './ui/aside/__list.scss';
+@import './ui/aside/__item.scss';
+@import './ui/aside/__link.scss';
+@import './ui/aside/__link--selected.scss';
+@import './ui/aside/__footer.scss';
+@import './ui/aside/__footer-block.scss';
+@import './ui/aside/__footer-link.scss';
+@import './ui/aside/__footer-link--selected.scss';
+@import './ui/aside/menu-contacts/__mail.scss';
+@import './ui/aside/menu-contacts/__phone.scss';
 
 @import './ui/modal/modal.scss';
 @import './ui/modal/modal--hide.scss';
-@import './ui/modal/feedback/feedback.scss';
-@import './ui/modal/call/call.scss';
+@import './ui/modal/modal-close-button.scss';
+
+@import './ui/modal/call/_title';
+@import './ui/modal/call/_header';
+@import './ui/modal/call/_body';
+@import './ui/modal/call/form/form.scss';
+@import './ui/modal/call/form/_phone';
+@import './ui/modal/call/form/_button';
+@import './ui/modal/call/form/_input';
+
+@import './ui/modal/feedback/_title';
+@import './ui/modal/feedback/_header';
+@import './ui/modal/feedback/_body';
+@import './ui/modal/feedback/form/form.scss';
+@import './ui/modal/feedback/form/_input';
+@import './ui/modal/feedback/form/_name';
+@import './ui/modal/feedback/form/_phone';
+@import './ui/modal/feedback/form/_email';
+@import './ui/modal/feedback/form/_button';
+@import './ui/modal/feedback/form/_textarea';
 
 @import './global/global.scss';
 @import './global/global-animations/global-animations.scss';
-@import './global/visually-hidden.scss';
-@import './global/normalize.scss';
+@import './global/services/visually-hidden.scss';
+@import './global/services/normalize.scss';

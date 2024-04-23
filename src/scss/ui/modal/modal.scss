@@ -7,7 +7,7 @@
 
   z-index: 22;
 
-  box-shadow: -16px 0 50px 0px $aside-menu-box-shadow-color;
+  box-shadow: -16px 0 50px 0px $shadow-color;
   
   @media (min-width: 320px) {
     width: 320px;
@@ -17,15 +17,15 @@
     width: 440px;
   }
 
-  background-color: #fff;
+  background-color: $white-color;
   transition: $transition;
 
   .link {
-    color: #FF3E79;
+    color: $cherry-color;
     transition: $transition;
 
     &:hover {
-      color: $list-link-color-hover;
+      color: $hover-font-color;
     }
   }
 }

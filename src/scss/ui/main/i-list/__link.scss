@@ -29,7 +29,7 @@
     transition: $transition;
 
     &:hover {
-      color: $list-link-color-hover;
+      color: $font-color;
     }
   }
 }
@@ -47,7 +47,7 @@
     transition: $transition;
 
     &:hover {
-      color: $list-link-color-hover;
+      color: $font-color;
     }
   }
 }

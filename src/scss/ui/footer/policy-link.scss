@@ -1,0 +1,18 @@
+@media (min-width: 1440px) {
+  .policy-link {
+    color: $hover-font-color;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439.9px) {
+  .policy-link {
+    color: $hover-font-color;
+    text-wrap: nowrap;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .policy-link {
+    color: $hover-font-color;
+  }
+}

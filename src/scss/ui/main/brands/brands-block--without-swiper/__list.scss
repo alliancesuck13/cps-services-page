@@ -7,8 +7,8 @@
       grid-template-columns: 240px 240px 240px 240px;
       grid-template-rows: 72px 72px 72px;
   
-      row-gap: $desk-default-row-gap;
-      column-gap: $desk-default-column-gap;
+      row-gap: 16px;
+      column-gap: 32px;
       overflow-y: hidden;
     }
   }
@@ -32,8 +32,8 @@
   
       grid-template-rows: 72px 72px 72px;
   
-      row-gap: $tab-default-row-gap;
-      column-gap: $tab-default-column-gap;
+      row-gap: 16px;
+      column-gap: 24px;
       overflow-y: hidden;
     }
   }

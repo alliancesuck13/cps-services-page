@@ -1,0 +1,10 @@
+.feedback__title {
+  font-size: 24px;
+
+  &:before {
+    content: url("../img/highlight.svg");
+    position: relative;
+    left: -16px;
+    top: 10px;
+  }
+}

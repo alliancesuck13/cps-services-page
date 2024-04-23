@@ -3,7 +3,7 @@
     transform: translateX(450px);
   }
 
-  @media (min-width: $desk-min-width) {
+  @media (min-width: 1440px) {
     transform: translateX(550px);
   }
 }

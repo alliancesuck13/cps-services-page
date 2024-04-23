@@ -1,0 +1,15 @@
+@media (min-width: 1440px) {
+  .feedback__header {
+    padding: 40px 32px;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 320px) {
+  .feedback__header {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+    padding-bottom: 0;
+  }
+}

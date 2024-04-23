@@ -13,7 +13,7 @@ h2 {
 
 .line {
   height: 32px;
-  border-left: 2px solid #eaeaea;
+  border-left: 2px solid $border-color--second;
 }
 
 .button {
@@ -25,7 +25,7 @@ h2 {
   transition: $transition;
 
   &:hover {
-    color: #7e7e82;
+    color: $hover-font-color;
   }
 }
 
@@ -39,8 +39,8 @@ h2 {
   padding-right: 0;
   border-radius: 35px;
 
-  color: #fff;
-  background-color: #FF3E79;
+  color: $white-color;
+  background-color: $cherry-color;
 
   transition: $transition ease-in-out;
 
@@ -54,10 +54,10 @@ h2 {
   }
 
   &:hover {
-    color: #fff;
+    color: $white-color;
     filter: hue-rotate(-6deg);
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.151));
-    box-shadow: inset 0 0 20px -15px black;
+    box-shadow: inset 0 0 20px -15px $font-color;
 
     transform: scale(1.01);
   }
@@ -74,7 +74,7 @@ h2 {
 }
 
 .swiper-pagination span {
-  background-color: $swiper-pagination-color;
+  background-color: $hover-font-color;
   padding: 2px;
 }
 
@@ -94,6 +94,6 @@ h2 {
 
   z-index: 10;
 
-  background-color: white;
+  background-color: $white-color;
   opacity: 0.95;
 }

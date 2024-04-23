@@ -1,0 +1,15 @@
+@media (min-width: 1440px) {
+  .feedback__body {
+    padding: 40px 32px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 320px) {
+  .feedback__body {
+    padding: 24px 16px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

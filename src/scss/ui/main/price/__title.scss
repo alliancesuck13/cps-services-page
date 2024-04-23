@@ -20,7 +20,7 @@
     max-width: 1440px;
 
     padding: 16px 24px;
-    background-image: linear-gradient(to right, #f8f8f8, #fff);
+    background-image: linear-gradient(to right, $body-color, $white-color);
 
     text-transform: uppercase;
   }
@@ -32,8 +32,8 @@
     font-size: 16px;
     font-weight: normal;
 
-    padding: 16px 24px;
-    background-image: linear-gradient(to right, #f8f8f8, #fff);
+    padding: 16px 16px;
+    background-image: linear-gradient(to right, $body-color, $white-color);
 
     text-transform: uppercase;
   }

@@ -1,67 +1,16 @@
-// размер экрана
-$mob-min-width:                    320px;
-$mob-max-width:                    767.9px;
-$tab-min-width:                    768px;
-$tab-max-width:                    1439.9px;
-$desk-min-width:                   1440px;
+$tab-xs-width:            1024px;
+$tab-s-width:             1280px;
 
-$tab-xs-width:                     1024px;
-$tab-s-width:                      1280px;
+$font-stack:             'TT Lakes Condensed', Tahoma, sans-serif;
 
-// шрифт и все, что с ним связано
-$font-stack:                      'TT Lakes Condensed', Tahoma, sans-serif;
-$default-font-size:                16px;
+$transition:              400ms;
 
-// цвета
-$page-background-color:          #f8f8f8;
-$header-background-color:        #ffffff;
-$list-link-color:                #7e7e82;
-$list-link-color-hover:          black;
-$list-link-background-color:       transparent;
-$selected-link-background-color: #ffffff;
-$selected-link-border-color:     #b8ffec;
-$default-font-color:             black;
-$aside-menu-background-color:    #fff;
-$aside-menu-box-shadow-color:    rgba(14, 24, 80, 0.2);
-$brands-title-color:             #7e7e82;
-$brands-link-background-color:   #fff;
-$brands-link-border-color:       #eaeaea;
-$swiper-pagination-color:        #b5b6bc;
-$aside-menu-link-color:          black;
-$aside-menu-link-color-hover:    #7e7e82;
-
-
-// отступы внутренние/внешние мобилки
-$mob-default-horizontal-margin:    16px;
-$mob-default-vertical-margin:      24px;
-$mob-default-horizontal-padding:   16px;
-$mob-default-vertical-padding:     24px;
-
-// отступы таблет
-$tab-default-horizontal-margin:    24px;
-$mob-default-vertical-margin:      32px;
-$tab-default-horizontal-padding:   24px;
-$tab-default-vertical-padding:     32px;
-$tab-default-column-gap:           24px; 
-$tab-default-row-gap:              16px; 
-
-// отступы десктоп
-$desk-default-horizontal-margin:   32px;
-$desk-default-horizontal-padding:  32px;
-$desk-default-column-gap:          32px; 
-$desk-default-row-gap:             16px; 
-
-$transition:                       400ms;
-
-
-// новые стили
-
-// цвета
-$body-color:        #F8F8F8;
-$white-color:       #FFFFFF;
-$cherry-color:      #FF3E79;
-$font-color:        #1B1C21;
-$hover-font-color:  #7E7E82;
-$transparent-color:   transparent;
-$border-color:      #b8ffec;
-// second border-color #eaeaea
+$body-color:            #F8F8F8;
+$white-color:           #FFFFFF;
+$cherry-color:          #FF3E79;
+$font-color:            #1B1C21;
+$hover-font-color:      #7E7E82;
+$transparent-color:       transparent;
+$border-color:          #b8ffec;
+$border-color--second:  #eaeaea;
+$shadow-color:          rgba(14, 24, 80, 0.2);

@@ -1,0 +1,10 @@
+.aside-menu__link--selected {
+  color: $hover-font-color;
+
+  &:before {
+    content: url('../img/highlight.svg');
+    position: absolute;
+    left: 0;
+    transform: translateY(-7px);
+  }
+}

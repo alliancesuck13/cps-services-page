@@ -1,0 +1,12 @@
+.aside-menu__footer-link {
+  color: $font-color;
+
+  text-transform: uppercase;
+
+  margin-right: 7px;
+  transition: $transition;
+
+  &:hover {
+    color: $hover-font-color;
+  }
+}
