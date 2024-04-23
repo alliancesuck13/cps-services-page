@@ -1319,6 +1319,8 @@ h2 {
 .button {
   padding: 0;
   background-color: transparent;
+  color: #1B1C21;
+  -webkit-color: #1B1C21;
   border: none;
   cursor: pointer;
   transition: 400ms; }
